@@ -4,13 +4,13 @@ metadata:
   name: always-latest01
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: example=ghcr.io/Rollson/gitops-cert-level-2-examples
+    argocd-image-updater.argoproj.io/image-list: example=ghcr.io/rollson/gitops-cert-level-2-examples
     argocd-image-updater.argoproj.io/example.update-strategy: latest
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/Rollson/gitops-cert-level-2-examples.git
+    repoURL: https://github.com/rollson/gitops-cert-level-2-examples.git
     targetRevision: HEAD
     path: ./image-updater/example-app/envs/qa/
    
